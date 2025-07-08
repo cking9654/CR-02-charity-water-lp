@@ -1,47 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>charity: water</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #79a6b7;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: white;
+    }
+
+    .logo {
+      font-size: 24px;
+      color: black;
+    }
+
+    .donate-button {
+      background-color: #FFD33D;
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .hero {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        padding: 100px 80px;
+      }
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #e0e0e0;
+      margin-bottom: 30px;
+    }
+
+    .cta-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+    }
+
+    .cta-form input {
+      padding: 14px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .cta-form button {
+      background-color: #FFD33D;
+      color: black;
+      padding: 14px;
+      border: none;
+      font-weight: bold;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin-top: 40px;
+    }
+
+    @media (min-width: 768px) {
+      .hero-image {
+        margin-left: 60px;
+        margin-top: 0;
+      }
+    }
+  </style>
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
+  <header>
+    <div class="logo">charity: water</div>
+    <button class="donate-button">Donate</button>
+  </header>
 
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
-        </div>
-    </section>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Clean Water.<br>Clear Impact.</h1>
+      <p>Support sustainable water projects and see exactly how your contribution transforms lives on the frontlines of climate and injustice.</p>
+      <form class="cta-form">
+        <input type="text" placeholder="Enter your name" />
+        <button type="submit">See Your Impact</button>
+      </form>
+    </div>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
+    <div class="hero-image">
+      <img src="https://cdn2.dropmarkusercontent.com/52043/1b90606fe869585aa4a73fef2d582743544c85398f725fd9457aacb60006aa32/preview/0207_Ethiopia_2019_CG-.jpg?Expires=1751935943&Signature=aoL73qYIsi1F0B6GDWFo~0XM24lBGFSPymSGEoem2kwI-DJAhhbAuRhmlYnQi7UE3kP1BoNDjrHdh1g6eRs7AL92VrJKj9vapy~qIO1UZ7GAgNqwy5ypOYtj73YNFuJSSCrcV8VDjY5WYAVYLWQw9D9-w9~Mf9kiKjbT2YAVewFzgOt5OWzp8ZwMNTAfCPSfR72oGxL942hudQCWhmRuLdBFJ0tv8xFNjgqjX1lIutQlAJ14wYywiNQHkiElPTT6olUUcj0cgDGeXbrUOC7x2q3WCRwQg8ikUZat5AlavJ8Eahuqj7JGAi9Hq4EyvYPXnMbCc6TDSPu4s2HJOxrCzA__&Key-Pair-Id=APKAITQYWVEN757ZA4KQ" alt="Placeholder for impact photo" />
+    </div>
+  </section>
 </body>
 </html>
